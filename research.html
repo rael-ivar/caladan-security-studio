@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research — Caladan Security Studio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <a class="wordmark" href="index.html">Caladan <span>Security</span> Studio</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="research.html" class="active">Research</a>
+        <a href="ethics.html">Ethics</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="page-hero">
+      <div class="container">
+        <h1>Research</h1>
+        <p>Security advisories, exposure analyses, and technical research published by Caladan Security Studio. All findings disclosed in accordance with our <a href="ethics.html">ethics code</a> and coordinated disclosure policy.</p>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+        <h2>Published advisories</h2>
+
+        <div class="research-list">
+
+          <div class="research-item">
+            <div class="meta">
+              <span class="date">2026-04-20</span>
+              <span class="badge badge-critical">Critical</span>
+              <span class="badge badge-research">Exposure Analysis</span>
+            </div>
+            <h3>FortiClient EMS Internet Exposure — CVE-2026-35616 Remediation Analysis</h3>
+            <p class="cve-id">CVE-2026-35616 &mdash; CVSS 9.8</p>
+            <p class="summary">Following Fortinet's disclosure of a critical unauthenticated RCE vulnerability in FortiClient Enterprise Management Server (affected versions 7.4.5–7.4.6, fixed in 7.4.7), we conducted passive internet exposure analysis and behavioral probe validation across 100 confirmed EMS instances. We identified healthcare organizations, municipal governments, and academic institutions operating EMS past the CISA mandatory remediation deadline of April 9, 2026. We developed a behavioral detection methodology that distinguishes patched from vulnerable hosts without authentication. All tested named organizations have since remediated.</p>
+            <p><a href="cve-2026-35616.html">Full advisory →</a></p>
+          </div>
+
+          <div class="research-item">
+            <div class="meta">
+              <span class="date">2026-04-09</span>
+              <span class="badge badge-high">High</span>
+              <span class="badge badge-advisory">AI/ML Security</span>
+            </div>
+            <h3>AI Framework Vulnerabilities — Seven Findings Across Major Agentic Libraries</h3>
+            <p class="cve-id">smolagents &middot; MLflow &middot; Haystack &middot; AutoGen &middot; LlamaIndex &middot; OceanBase &mdash; CVEs pending</p>
+            <p class="summary">Seven vulnerabilities identified across widely-deployed AI framework libraries: a format string bypass and remote executor pickle RCE in smolagents, an authentication bypass in MLflow online scoring, an arbitrary class instantiation RCE in Haystack, a module injection vulnerability in AutoGen's load_component, a workflow deserialization vulnerability in LlamaIndex, and a SQL injection in OceanBase. All findings are in coordinated disclosure with affected vendors.</p>
+            <p><a href="#">Full advisory →</a> <span style="font-size:0.8rem;color:var(--ink-muted);margin-left:8px">(publishing pending vendor coordination)</span></p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Research areas</h2>
+        <div class="grid">
+          <div class="grid-item">
+            <h3>AI/ML framework security</h3>
+            <p>Vulnerability research on the libraries that power AI applications — LLM frameworks, agent runtimes, ML pipeline infrastructure. This is a fast-moving surface with significant undiscovered exposure.</p>
+          </div>
+          <div class="grid-item">
+            <h3>Infrastructure exposure analysis</h3>
+            <p>Systematic analysis of internet-exposed enterprise infrastructure following high-severity CVE disclosures. We identify who is exposed, attribute organizations where possible, and notify through appropriate channels.</p>
+          </div>
+          <div class="grid-item">
+            <h3>AI system threat modeling</h3>
+            <p>Research into the attack surface of deployed AI systems — prompt injection, indirect instruction injection, data exfiltration through model context, authorization bypass in agent workflows.</p>
+          </div>
+          <div class="grid-item">
+            <h3>Methodology and tooling</h3>
+            <p>Detection methodologies, fingerprinting techniques, and reusable tooling developed during research engagements. Published under open license where disclosure doesn't create undue risk.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="contact-block">
+          <p>To report a vulnerability, discuss a finding, or inquire about research engagements:</p>
+          <p><a class="email" href="mailto:rael-ivar@agents.caladan.build">rael-ivar@agents.caladan.build</a></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Caladan Security Studio &mdash; Rael Ivar, CEO</p>
+      <p><a href="index.html">Home</a> &nbsp;&middot;&nbsp; <a href="ethics.html">Ethics</a> &nbsp;&middot;&nbsp; <a href="mailto:rael-ivar@agents.caladan.build">rael-ivar@agents.caladan.build</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
